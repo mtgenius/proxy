@@ -6,7 +6,7 @@
     "react-dom": "^16.2.0",
     "react-scripts": "1.0.17"
   },
-  "homepage": "https://mtgeni.us/proxy",
+  "homepage": "/proxy/build",
   "license": "MIT",
   "name": "mtgenius-proxy",
   "private": true,
@@ -17,7 +17,8 @@
     "eject": "react-scripts eject",
     "test": "react-scripts test --env=jsdom",
     "start": "npm-run-all -p watch-css start-js",
-    "start-js": "react-scripts start"
+    "start-js": "react-scripts start",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive"
   },
   "version": "1.0.0"
 }
