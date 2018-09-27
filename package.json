@@ -6,7 +6,7 @@
     "react-dom": "^16.2.0",
     "react-scripts": "1.0.17"
   },
-  "homepage": "/proxy/build",
+  "homepage": "https://mtgeni.us/proxy",
   "license": "MIT",
   "name": "mtgenius-proxy",
   "private": true,
