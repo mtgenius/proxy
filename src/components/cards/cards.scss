@@ -1,0 +1,17 @@
+.cards {
+  display: grid;
+  grid-auto-columns: 63mm;
+  grid-auto-flow: row dense;
+  grid-auto-rows: 88mm;
+  grid-template-areas: "card card card";
+  margin: 0 auto;
+  width: fit-content;
+
+  @media print {
+    grid-gap: 1px;
+  }
+
+  @media screen {
+    grid-gap: 1rem;
+  }
+}

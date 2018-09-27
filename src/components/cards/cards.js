@@ -1,26 +1,31 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import AddCard from '../add-card/add-card';
 import Card from '../card/card';
+import './cards.scss';
 
-class Cards extends React.Component {
+class Cards extends React.PureComponent {
 
-	constructor(props) {
-		super(props);
-		this.state = {
-			cards: []
-		};
-	}
+  get cards() {
+    return this.props.cards.map(card =>
+      <Card
+        key={card.key}
+      />
+    );
+  }
 
-	render() {
-		return (
-			<div className="cards-component">
-				{this.state.cards.map(card =>
-					<Card {...card} />
-				)}
-				<AddCard />
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div className="cards">
+        {this.cards}
+        <AddCard />
+      </div>
+    );
+  }
 }
 
-export default Cards;
+export default connect(
+  ({ app }) => ({
+    cards: app.cards
+  })
+)(Cards);

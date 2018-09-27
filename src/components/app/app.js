@@ -1,20 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Cards from '../cards/cards';
-import './app.css';
+import './app.scss';
 
-class App extends Component {
+export default class App extends React.PureComponent {
   render() {
     return (
-      <div className="app-component">
+      <React.Fragment>
         <header>
-          <h1><abbr title="Magic: The Gathering">MTG</abbr> Card Proxy</h1>
+          {/*<h1>Magic: The Gathering Card Proxies</h1>*/}
         </header>
         <main>
           <Cards />
         </main>
-      </div>
-    );
+      </React.Fragment>
+    )
   }
 }
-
-export default App;
