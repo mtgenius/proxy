@@ -1,7 +1,4 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { addCard } from '../../actions/app-actions';
+import React from 'reactn';
 import './add-card.scss';
 
 class AddCard extends React.PureComponent {
@@ -11,14 +8,11 @@ class AddCard extends React.PureComponent {
         <button
           children="+"
           className="add-card-button"
-          onClick={this.props.addCard}
+          onClick={this.global.addCard}
         />
       </div>
     );
   }
 }
 
-export default connect(
-  null,
-  dispatch => bindActionCreators({ addCard }, dispatch)
-)(AddCard);
+export default AddCard;
