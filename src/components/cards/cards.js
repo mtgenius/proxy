@@ -6,15 +6,6 @@ import './cards.scss';
 
 class Cards extends React.PureComponent {
 
-  static getDerivedGlobalFromProps( _, global) {
-    if (!global.cards) {
-      return {
-        cards: []
-      };
-    }
-    return null;
-  }
-
   get cards() {
     return this.global.cards.map(card =>
       <Card

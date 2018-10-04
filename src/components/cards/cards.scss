@@ -3,7 +3,11 @@
   grid-auto-columns: 63mm;
   grid-auto-flow: row dense;
   grid-auto-rows: 88mm;
-  grid-template-areas: "card card card";
+  grid-template-areas:
+    ". . ."
+    "card card card"
+    "card card card"
+    "card card card";
   margin: 0 auto;
   width: fit-content;
 

@@ -7,7 +7,7 @@ export default class App extends React.PureComponent {
     return (
       <React.Fragment>
         <header>
-          {/*<h1>Magic: The Gathering Card Proxies</h1>*/}
+          <h1>Magic: The Gathering Card Proxies</h1>
         </header>
         <main>
           <Cards />

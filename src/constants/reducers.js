@@ -1,5 +1,10 @@
 import { reducers } from 'reactn';
 
+reducers.init({
+  cards: [],
+  searchedCards: Object.create(null)
+});
+
 // Add a Card
 const NO_CARD = Object.create(null);
 reducers.addCard = (state, card = NO_CARD) => {
@@ -35,6 +40,23 @@ reducers.removeCard = (state, id) => {
         state.cards.slice(index + 1, state.cards.length + 1)
       )
   };
+};
+
+// Search for a Card
+reducers.searchCard = (state, search) => {
+  if (Object.prototype.hasOwnProperty.call(state.searchedCards, search)) {
+    return null;
+  }
+  return fetch(process.env.REACT_APP_MTGJSON_API + '?q=' + encodeURIComponent(search))
+    .then(response => response.json())
+    .catch(err => err.message)
+    .then(final => ({
+      ...state,
+      searchedCards: {
+        ...state.searchedCards,
+        [search]: final
+      }
+    }));
 };
 
 // Update a Card

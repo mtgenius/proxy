@@ -5,6 +5,26 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
+  position: relative;
+
+  > .card-image {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+
+  &:hover > div,
+  &:hover > span {
+    opacity: 1;
+  }
+
+  > div,
+  > span {
+    opacity: 0;
+  }
 
   > span {
     align-items: center;
@@ -14,11 +34,12 @@
     cursor: pointer;
     display: inline-flex;
     line-height: 0;
-    max-height: 1em;
-    min-height: 1em;
+    max-height: 1rem;
+    min-height: 1rem;
     justify-content: center;
-    max-width: 1em;
-    min-width: 1em;
+    max-width: 1rem;
+    min-width: 1rem;
+    z-index: 1;
 
     &.card-add {
       background-color: #40C040;

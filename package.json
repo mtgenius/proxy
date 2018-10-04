@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "build": "react-scripts build",
-    "start": "react-scripts start"
+    "start": "set REACT_APP_MTGJSON_API=http://localhost/mtg.json&& react-scripts start"
   },
   "browserslist": [
     ">0.2%",
