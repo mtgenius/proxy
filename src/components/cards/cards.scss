@@ -1,13 +1,11 @@
+$spacer: calc((11in - 264mm - 2px) / 2);
+
 .cards {
   display: grid;
   grid-auto-columns: 63mm;
   grid-auto-flow: row dense;
-  grid-auto-rows: 88mm;
-  grid-template-areas:
-    ". . ."
-    "card card card"
-    "card card card"
-    "card card card";
+  grid-auto-rows: calc($spacer + 88mm) 88m calc($spacer + 88mm);
+  grid-template-areas: ". . .";
   margin: 0 auto;
   width: fit-content;
 

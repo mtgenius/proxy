@@ -1,3 +1,6 @@
+// 11in page, minus 88mm per card, minus 1px per row for some reason
+$spacer: calc((11in - 264mm - 3px) / 2);
+
 .card {
   align-items: flex-start;
   box-sizing: border-box;
@@ -6,6 +9,18 @@
   justify-content: space-between;
   padding: 10px;
   position: relative;
+
+  &:nth-child(9n+1),
+  &:nth-child(9n+2),
+  &:nth-child(9n+3) {
+    margin-top: $spacer;
+  }
+
+  &:nth-child(9n+7),
+  &:nth-child(9n+8),
+  &:nth-child(9n+9) {
+    margin-bottom: $spacer;
+  }
 
   > .card-image {
     height: 100%;
