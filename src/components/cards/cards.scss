@@ -4,7 +4,7 @@ $spacer: calc((11in - 264mm - 2px) / 2);
   display: grid;
   grid-auto-columns: 63mm;
   grid-auto-flow: row dense;
-  grid-auto-rows: calc($spacer + 88mm) 88m calc($spacer + 88mm);
+  grid-auto-rows: calc(#{$spacer} + 88mm) 88m calc(#{$spacer} + 88mm);
   grid-template-areas: ". . .";
   margin: 0 auto;
   width: fit-content;
