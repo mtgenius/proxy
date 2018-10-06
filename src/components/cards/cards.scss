@@ -2,7 +2,7 @@
   display: grid;
   grid-auto-columns: 63mm;
   grid-auto-flow: row dense;
-  grid-auto-rows: calc(5.5in - 44mm - 1px) 88mm calc(5.5in - 44mm - 1px);
+  grid-auto-rows: calc(#{5.5in - 44mm - 1px}) 88mm calc(#{5.5in - 44mm - 1px});
   grid-template-areas: ". . .";
   margin: 0 auto;
   width: fit-content;
