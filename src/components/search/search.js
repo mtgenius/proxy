@@ -20,6 +20,10 @@ class Search extends React.PureComponent {
     );
   };
 
+  handleRef = ref => {
+    this.props.onRef(ref);
+  };
+
   handleResultSelect = card => {
     this.setState(
       { value: card.name },
@@ -64,6 +68,7 @@ class Search extends React.PureComponent {
         <input
           onChange={this.handleChange}
           placeholder="Card Name"
+          ref={this.handleRef}
           type="text"
           value={this.state.value}
         />

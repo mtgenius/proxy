@@ -5,12 +5,27 @@ import './card.scss';
 
 class Card extends React.PureComponent {
 
+  searchRef = null;
+
   handleAdd = () => {
     this.global.addCard({
       multiverseid: this.props.multiverseid,
       name: this.props.name,
       set: this.props.set
     });
+  };
+
+  handleMouseEnter = () => {
+    if (this.searchRef) {
+      this.searchRef.focus();
+    }
+  };
+
+  handleSearchRef = ref => {
+    this.searchRef = ref;
+    if (ref) {
+      ref.focus();
+    }
   };
 
   handleSearchResult = result => {
@@ -40,6 +55,7 @@ class Card extends React.PureComponent {
     return (
       <div
         className="card"
+        onMouseEnter={this.handleMouseEnter}
         style={this.cardStyle}
       >
         {this.image}
@@ -51,6 +67,7 @@ class Card extends React.PureComponent {
         />
         <Search
           name={this.props.name || ''}
+          onRef={this.handleSearchRef}
           onResult={this.handleSearchResult}
         />
         <span

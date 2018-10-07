@@ -62,5 +62,9 @@
       background-color: #C04040;
       border-color: #402020;
     }
+
+    @media print {
+      display: none;
+    }
   }
 }
