@@ -28,7 +28,7 @@ class Card extends React.PureComponent {
           alt={this.props.name}
           className="card-image"
           height="100%"
-          src={`http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=${this.props.multiverseid}&type=card`}
+          src={'https://i.mtgeni.us/' + this.props.multiverseid + '.png'}
           width="100%"
         />
       );
