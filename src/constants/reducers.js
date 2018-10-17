@@ -1,13 +1,13 @@
-import { reducers } from 'reactn';
+import { addReducer, setGlobal } from 'reactn';
 
-reducers.init({
+setGlobal({
   cards: [],
   searchedCards: Object.create(null)
 });
 
 // Add a Card
 const NO_CARD = Object.create(null);
-reducers.addCard = (state, card = NO_CARD) => {
+addReducer('addCard', (state, card = NO_CARD) => {
   let id = Date.now();
   const cardId = c => c.id === id;
   while (state.cards.findIndex(cardId) !== -1) {
@@ -23,10 +23,10 @@ reducers.addCard = (state, card = NO_CARD) => {
       }
     ]
   };
-};
+});
 
 // Remove a Card
-reducers.removeCard = (state, id) => {
+addReducer('removeCard', (state, id) => {
   const cardId = c => c.id === id;
   const index = state.cards.findIndex(cardId);
   if (index === -1) {
@@ -40,10 +40,10 @@ reducers.removeCard = (state, id) => {
         state.cards.slice(index + 1, state.cards.length + 1)
       )
   };
-};
+});
 
 // Search for a Card
-reducers.searchCard = (state, search) => {
+addReducer('searchCard', (state, search) => {
   if (Object.prototype.hasOwnProperty.call(state.searchedCards, search)) {
     return null;
   }
@@ -57,10 +57,10 @@ reducers.searchCard = (state, search) => {
         [search]: final
       }
     }));
-};
+});
 
 // Update a Card
-reducers.updateCard = (state, id, card) => {
+addReducer('updateCard', (state, id, card) => {
   const cardId = c => c.id === id;
   const index = state.cards.findIndex(cardId);
   if (index === -1) {
@@ -80,4 +80,4 @@ reducers.updateCard = (state, id, card) => {
         state.cards.slice(index + 1, state.cards.length + 1)
       )
   };
-};
+});
