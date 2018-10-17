@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "rm -rf build && react-scripts build && mv build docs",
+    "build": "set REACT_APP_MTGJSON_API=https://api.mtgeni.us/mtg.json&& rm -rf docs && react-scripts build && mv build docs",
     "start": "set REACT_APP_MTGJSON_API=http://localhost/mtg.json&& react-scripts start"
   },
   "browserslist": [
