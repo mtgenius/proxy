@@ -1,9 +1,8 @@
-import React from 'react';
-import reactn from 'reactn';
+import React from 'reactn';
 import Search from '../search/search';
 import './card.scss';
 
-class Card extends React.PureComponent {
+export default class Card extends React.PureComponent {
 
   searchRef = null;
 
@@ -80,5 +79,3 @@ class Card extends React.PureComponent {
     );
   }
 }
-
-export default reactn(Card);

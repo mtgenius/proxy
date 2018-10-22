@@ -1,8 +1,7 @@
-import React from 'react';
-import reactn from 'reactn';
+import React from 'reactn';
 import './counter.scss';
 
-class Counter extends React.PureComponent {
+export default class Counter extends React.PureComponent {
   render() {
     const cards = this.global.cards;
     if (cards.length % 9 === 0) {
@@ -18,5 +17,3 @@ class Counter extends React.PureComponent {
     );
   }
 }
-
-export default reactn(Counter);

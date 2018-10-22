@@ -1,9 +1,8 @@
-import React from 'react';
-import reactn from 'reactn';
+import React from 'reactn';
 import Result from './result/search-result';
 import './search.scss';
 
-class Search extends React.PureComponent {
+export default class Search extends React.PureComponent {
 
   state = {
     value: this.props.name
@@ -77,5 +76,3 @@ class Search extends React.PureComponent {
     );
   }
 }
-
-export default reactn(Search);

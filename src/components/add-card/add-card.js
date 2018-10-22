@@ -1,8 +1,7 @@
-import React from 'react';
-import reactn from 'reactn';
+import React from 'reactn';
 import './add-card.scss';
 
-class AddCard extends React.PureComponent {
+export default class AddCard extends React.PureComponent {
   render() {
     return (
       <div className="card add-card">
@@ -16,5 +15,3 @@ class AddCard extends React.PureComponent {
     );
   }
 }
-
-export default reactn(AddCard);

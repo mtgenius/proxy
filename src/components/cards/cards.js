@@ -1,10 +1,9 @@
-import React from 'react';
-import reactn from 'reactn';
+import React from 'reactn';
 import AddCard from '../add-card/add-card';
 import Card from '../card/card';
 import './cards.scss';
 
-class Cards extends React.PureComponent {
+export default class Cards extends React.PureComponent {
 
   get cards() {
     return this.global.cards.map(card =>
@@ -24,5 +23,3 @@ class Cards extends React.PureComponent {
     );
   }
 }
-
-export default reactn(Cards);
