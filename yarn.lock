@@ -6987,9 +6987,9 @@ react@^16.5.2:
     prop-types "^15.6.2"
     schedule "^0.5.0"
 
-reactn@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/reactn/-/reactn-0.0.6.tgz#99c1d510af78e95cea8f56c020264265dcb0f6dd"
+reactn@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/reactn/-/reactn-0.0.7.tgz#6db09e82b672f0ab62ef91e3843b1185242af063"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
