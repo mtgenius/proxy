@@ -1,6 +1,7 @@
 import React from 'reactn';
 import './add-card.scss';
 
+// Render a button that calls the global addCard reducer (with no parameters) on click.
 export default class AddCard extends React.PureComponent {
   render() {
     return (
