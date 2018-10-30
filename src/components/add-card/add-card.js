@@ -1,18 +1,20 @@
-import React from 'reactn';
+import React from 'react';
+import { useGlobal } from 'reactn';
 import './add-card.scss';
 
 // Render a button that calls the global addCard reducer (with no parameters) on click.
-export default class AddCard extends React.PureComponent {
-  render() {
-    return (
-      <div className="card add-card">
-        <button
-          children="+"
-          className="add-card-button"
-          onClick={this.global.addCard}
-          title="Add a new card."
-        />
-      </div>
-    );
-  }
-}
+const AddCard = () => {
+  const addCard = useGlobal('addCard');
+  return (
+    <div className="card add-card">
+      <button
+        children="+"
+        className="add-card-button"
+        onClick={addCard}
+        title="Add a new card."
+      />
+    </div>
+  );
+};
+
+export default AddCard;
