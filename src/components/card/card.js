@@ -4,6 +4,10 @@ import Search from '../search/search';
 import './card.scss';
 import { removeCardReducer, updateCardReducer } from './card-reducers';
 
+/*
+ReactN custom reducer hook demo
+ReactN global reducer hook demo
+*/
 
 // Display a card.
 const Card = ({ id, multiverseid, name, set }) => {

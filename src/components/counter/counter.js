@@ -1,24 +1,38 @@
 import React from 'react';
-import { useGlobal } from 'reactn';
+import { withGlobal } from 'reactn';
 import './counter.scss';
 
+/*
+ReactN withGlobal demo
+*/
+
+const PER_PAGE = 9;
+
 // Tell the user how many more cards are needed to make a multiple of 9.
-const Counter = () => {
+class Counter extends React.PureComponent {
 
-  // If the user has a multiple of 9 cards, do not display anything.
-  const [ cards ] = useGlobal('cards');
-  if (cards.length % 9 === 0) {
-    return null;
+  render() {
+
+    // If the user has a multiple of 9 cards, do not display anything.
+    if (this.props.remaining === 0) {
+      return null;
+    }
+
+    // Tell the user how many more cards are needed to make a multiple of 9.
+    return (
+      <div className="counter">
+        Add{' '}
+        <strong children={this.props.remaining} />{' '}
+        more.
+      </div>
+    );
   }
-
-  // Tell the user how many more cards are needed to make a multiple of 9.
-  return (
-    <div className="counter">
-      Add{' '}
-      <strong children={9 - cards.length % 9} />{' '}
-      more.
-    </div>
-  );
 };
 
-export default Counter;
+export default withGlobal(global => {
+  const remaining = PER_PAGE - global.cards.length % PER_PAGE;
+  if (remaining === PER_PAGE) {
+    return { remaining: 0 };
+  }
+  return { remaining };
+})(Counter);

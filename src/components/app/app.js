@@ -3,6 +3,10 @@ import Cards from '../cards/cards';
 import Counter from '../counter/counter';
 import './app.scss';
 
+/*
+No ReactN demo
+*/
+
 const App = () =>
   <>
     <header>

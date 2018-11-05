@@ -4,6 +4,10 @@ import Result from './result/search-result';
 import './search.scss';
 import { useValue } from './search-hooks';
 
+/*
+ReactN hook demo
+*/
+
 // Render a search box to find cards by name.
 const Search = ({ name, onResult }, ref) => {
   const [ searchedCards ] = useGlobal('searchedCards');

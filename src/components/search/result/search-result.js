@@ -1,6 +1,10 @@
 import React from 'react';
 import './search-result.scss';
 
+/*
+No ReactN demo
+*/
+
 // Render each search result.
 const SearchResult = ({ multiverseid, name, onSelect, set }) => {
 

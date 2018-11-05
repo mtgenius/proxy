@@ -6960,9 +6960,9 @@ react@^16.7.0-alpha.0:
     prop-types "^15.6.2"
     scheduler "^0.11.0-alpha.0"
 
-reactn@^0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/reactn/-/reactn-0.0.9.tgz#365f7d9c8cf42ea3f21b7c819a5a62092a189beb"
+reactn@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/reactn/-/reactn-0.1.0.tgz#7d9e0d33b727ca6770742a8c00242528fd013a55"
   dependencies:
     use-force-update "^1.0.0"
 
