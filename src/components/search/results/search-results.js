@@ -14,6 +14,9 @@ const Results = ({ onSelect, search }) => {
     let response;
     try {
       response = useFetch(process.env.REACT_APP_MTGJSON_API + '?q=' + encodeURIComponent(search));
+      if (typeof response === 'string') {
+        response = JSON.parse(response);
+      }
     }
     catch (e) {
       if (e instanceof Promise) {
