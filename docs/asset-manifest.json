@@ -1,14 +1,14 @@
 {
-  "main.css": "/proxy/static/css/main.dc5a0601.chunk.css",
-  "main.js": "/proxy/static/js/main.33baf544.chunk.js",
-  "main.js.map": "/proxy/static/js/main.33baf544.chunk.js.map",
-  "static/js/1.a164c31b.chunk.js": "/proxy/static/js/1.a164c31b.chunk.js",
-  "static/js/1.a164c31b.chunk.js.map": "/proxy/static/js/1.a164c31b.chunk.js.map",
+  "main.css": "/proxy/static/css/main.a56f9bad.chunk.css",
+  "main.js": "/proxy/static/js/main.234b91ac.chunk.js",
+  "main.js.map": "/proxy/static/js/main.234b91ac.chunk.js.map",
+  "static/js/1.cd125ee2.chunk.js": "/proxy/static/js/1.cd125ee2.chunk.js",
+  "static/js/1.cd125ee2.chunk.js.map": "/proxy/static/js/1.cd125ee2.chunk.js.map",
   "runtime~main.js": "/proxy/static/js/runtime~main.5bb74163.js",
   "runtime~main.js.map": "/proxy/static/js/runtime~main.5bb74163.js.map",
   "static/media/add-card.scss": "/proxy/static/media/back.04d6c221.gif",
-  "static/css/main.dc5a0601.chunk.css.map": "/proxy/static/css/main.dc5a0601.chunk.css.map",
+  "static/css/main.a56f9bad.chunk.css.map": "/proxy/static/css/main.a56f9bad.chunk.css.map",
   "index.html": "/proxy/index.html",
-  "precache-manifest.d24642c69a8bc2f1e3f96e15ef183be0.js": "/proxy/precache-manifest.d24642c69a8bc2f1e3f96e15ef183be0.js",
+  "precache-manifest.c130a939a5b3f5a2e6ee43f351156f53.js": "/proxy/precache-manifest.c130a939a5b3f5a2e6ee43f351156f53.js",
   "service-worker.js": "/proxy/service-worker.js"
 }
