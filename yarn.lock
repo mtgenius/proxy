@@ -6967,10 +6967,10 @@ react@^16.7.0-alpha.0:
     prop-types "^15.6.2"
     scheduler "^0.11.0-alpha.0"
 
-reactn@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/reactn/-/reactn-0.1.0.tgz#7d9e0d33b727ca6770742a8c00242528fd013a55"
-  integrity sha512-c4kbj7dhi8m4DsQqb/yGniajHMuy0yAdczhBsf9Oikmzb5R4APyC1srjdaPK7w00sQntMfxS1iQfA6tRwGvUvw==
+reactn@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/reactn/-/reactn-0.1.1.tgz#fea110b1271ee9364232943a359df00ce61cebbb"
+  integrity sha512-Ve73kw0LgHntegj2kygO3PQAB5UD8sR94WrcP9vF7H+g5Ps2ZdtePSF6RGd7RATqdGcGi4A/HH1Z2OpgnLxwnQ==
   dependencies:
     use-force-update "^1.0.0"
 
