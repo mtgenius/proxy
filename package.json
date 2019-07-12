@@ -19,7 +19,7 @@
     "node-sass": "^4.9.3",
     "react": "^16.7.0-alpha.0",
     "react-dom": "^16.7.0-alpha.0",
-    "reactn": "^0.1.1"
+    "reactn": "^2.1.2"
   },
   "devDependencies": {
     "react-scripts": "^3.0.1"
