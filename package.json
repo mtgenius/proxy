@@ -1,27 +1,42 @@
 {
-  "name": "mtgenius-proxy",
-  "version": "1.0.0",
-  "homepage": "https://mtgeni.us/proxy",
-  "license": "MIT",
+  "name": "proxy",
+  "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "build": "set REACT_APP_MTGJSON_API=https://api.mtgeni.us/mtg.json&& rm -rf docs && react-scripts build && mv build docs",
-    "start": "set REACT_APP_MTGJSON_API=http://localhost/mtg.json&& react-scripts start"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "dependencies": {
-    "fetch-suspense": "^1.0.1",
-    "node-sass": "^4.9.3",
-    "react": "^16.7.0-alpha.0",
-    "react-dom": "^16.7.0-alpha.0",
-    "reactn": "^2.1.2"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "3.4.0",
+    "typescript": "~3.7.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "exit 0",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-    "react-scripts": "^3.0.1"
+    "node-sass": "^4.13.1"
   }
 }
